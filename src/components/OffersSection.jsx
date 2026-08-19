@@ -271,7 +271,7 @@ const OffersSection = () => {
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center mt-12">
+        <div className="text-center mt-24">
           <a
             href="#menu-section"
             className="inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-black text-base

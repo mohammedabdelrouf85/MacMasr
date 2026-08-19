@@ -115,7 +115,7 @@ const TimelineSection = () => {
         <div className="relative max-w-5xl mx-auto">
           {/* Vertical Line */}
           <div
-            className="absolute top-0 bottom-0 right-8 md:right-1/2 w-1.5 bg-gray-100 rounded-full md:translate-x-1/2 overflow-hidden"
+            className="absolute top-0 bottom-0 right-8 translate-x-1/2 md:right-1/2 w-1.5 bg-gray-100 rounded-full md:translate-x-1/2 overflow-hidden"
           >
             <div
               className="timeline-line absolute top-0 left-0 right-0 h-full rounded-full"
@@ -132,7 +132,7 @@ const TimelineSection = () => {
                   
                   {/* Timeline Node (Dot) */}
                   <div
-                    className="absolute right-8 md:right-1/2 md:translate-x-1/2 flex items-center justify-center w-8 h-8 rounded-full border-4 border-white shadow-md z-10
+                    className="absolute right-8 translate-x-1/2 md:right-1/2 md:translate-x-1/2 flex items-center justify-center w-8 h-8 rounded-full border-4 border-white shadow-md z-10
                       transition-transform duration-300 group-hover:scale-125 group-hover:shadow-lg"
                     style={{ background: '#FFC72C' }}
                   >
