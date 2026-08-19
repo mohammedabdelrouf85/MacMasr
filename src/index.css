@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --color-mcd-red: #DA291C;
+  --color-mcd-yellow: #FFC72C;
+  --color-mcd-dark: #1a1a1a;
+  --font-display: 'Cairo', 'Poppins', sans-serif;
+}
+
+/* ── Reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Smooth scroll + snap ── */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* ── Body ── */
+body {
+  font-family: 'Cairo', 'Poppins', sans-serif;
+  overflow-x: hidden;
+  max-width: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Unified transition on interactive elements ── */
+a, button {
+  transition-property: color, background-color, border-color, box-shadow, transform, opacity;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ── Hide scrollbar utility ── */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ── Global keyframes used across sections ── */
+@keyframes slowZoom {
+  from { transform: scale(1.05); }
+  to   { transform: scale(1.13); }
+}
+@keyframes float {
+  from { transform: translateY(0px) rotate(-5deg); }
+  to   { transform: translateY(-20px) rotate(5deg); }
+}
+@keyframes scrollBounce {
+  0%, 100% { transform: translateY(0); opacity: 1; }
+  50%       { transform: translateY(8px); opacity: 0.4; }
+}
