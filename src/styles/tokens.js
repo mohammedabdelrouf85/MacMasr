@@ -21,10 +21,10 @@ export const GRID_3 = `grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ${CARD_GAP
 export const GRID_4 = `grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 ${CARD_GAP}`
 
 // Unified section H2 style  (apply as className)
-export const SECTION_H2 = 'text-4xl sm:text-5xl font-black leading-tight mb-4'
+export const SECTION_H2 = 'text-center text-4xl sm:text-5xl font-black leading-tight mb-4'
 
 // Unified section subtitle style
-export const SECTION_SUB = 'text-lg leading-relaxed max-w-xl mx-auto mb-14'
+export const SECTION_SUB = 'text-center text-lg leading-relaxed max-w-xl mx-auto mb-14'
 
 // Unified primary button (red → hover yellow)
 export const BTN_PRIMARY =

@@ -160,8 +160,8 @@ const HeroSection = () => {
             <a
               href="#offers"
               id="cta-order-now"
-              className="group relative inline-flex items-center gap-3 px-8 py-4 rounded-2xl
-                font-black text-lg overflow-hidden
+              className="group relative inline-flex items-center justify-center gap-3 px-10 py-4 rounded-2xl
+                font-black text-lg overflow-hidden text-center
                 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl active:scale-95"
               style={{
                 background: '#FFC72C',
@@ -171,9 +171,9 @@ const HeroSection = () => {
             >
               <span className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-2xl" />
               <span className="text-2xl">🍔</span>
-              اطلب دلوقتي
+              <span>اطلب دلوقتي</span>
               <span
-                className="inline-flex items-center justify-center w-7 h-7 rounded-full text-base font-black
+                className="inline-flex items-center justify-center w-7 h-7 rounded-full text-base font-black shrink-0
                   group-hover:-translate-x-1 transition-transform duration-300"
                 style={{ background: '#DA291C', color: '#FFC72C' }}
               >
@@ -184,8 +184,8 @@ const HeroSection = () => {
             <a
               href="#menu-section"
               id="cta-view-menu"
-              className="group inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-bold text-lg text-white
-                transition-all duration-300 ease-in-out hover:scale-105 active:scale-95"
+              className="group inline-flex items-center justify-center gap-3 px-10 py-4 rounded-2xl font-bold text-lg text-white
+                transition-all duration-300 ease-in-out hover:scale-105 active:scale-95 text-center"
               style={{
                 border: '2px solid rgba(255,255,255,0.65)',
                 background: 'rgba(255,255,255,0.07)',
@@ -201,7 +201,7 @@ const HeroSection = () => {
               }}
             >
               <span className="text-2xl">📋</span>
-              شوف المنيو
+              <span>شوف المنيو</span>
             </a>
           </motion.div>
 
