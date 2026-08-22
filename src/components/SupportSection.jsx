@@ -225,8 +225,8 @@ const SupportSection = () => {
               {/* Form decor */}
               <div className="absolute top-0 right-0 w-32 h-32 bg-[#FFC72C] opacity-10 rounded-bl-[100px]" />
               
-              <h3 className="font-black text-2xl text-gray-900 mb-2 relative z-10">ابعتلنا رسالة 📧</h3>
-              <p className="text-gray-500 mb-8 relative z-10">املأ البيانات دي وهنتواصل معاك في أسرع وقت.</p>
+              <h3 className="font-black text-2xl text-center text-gray-900 mb-2 relative z-10">ابعتلنا رسالة 📧</h3>
+              <p className="text-gray-500 text-center mb-8 relative z-10">املأ البيانات دي وهنتواصل معاك في أسرع وقت.</p>
 
               {isSuccess ? (
                 <motion.div
@@ -245,57 +245,57 @@ const SupportSection = () => {
                   
                   {/* Name */}
                   <div>
-                    <label className="block font-bold text-gray-700 text-sm mb-2">الاسم بالكامل</label>
+                    <label className="block font-bold text-gray-700 text-sm mb-3 text-center">الاسم بالكامل</label>
                     <input
                       type="text"
                       placeholder="اكتب اسمك هنا"
                       value={formData.name}
                       onChange={(e) => { setFormData({...formData, name: e.target.value}); if(errors.name) setErrors({...errors, name: ''}) }}
-                      className={`w-full bg-gray-50 border ${errors.name ? 'border-red-500' : 'border-gray-200'} rounded-2xl px-5 py-3.5 focus:outline-none focus:border-[#DA291C] focus:bg-white transition-colors`}
+                      className={`w-full text-center bg-gray-50 border ${errors.name ? 'border-red-500' : 'border-gray-200'} rounded-2xl px-6 py-4 focus:outline-none focus:border-[#DA291C] focus:bg-white transition-colors`}
                     />
-                    {errors.name && <span className="text-red-500 text-xs mt-1.5 font-bold block">{errors.name}</span>}
+                    {errors.name && <span className="text-red-500 text-xs mt-1.5 font-bold block text-center">{errors.name}</span>}
                   </div>
 
                   {/* Phone */}
                   <div>
-                    <label className="block font-bold text-gray-700 text-sm mb-2">رقم الموبايل</label>
+                    <label className="block font-bold text-gray-700 text-sm mb-3 text-center">رقم الموبايل</label>
                     <input
                       type="tel"
                       placeholder="01xxxxxxxxx"
                       dir="ltr"
                       value={formData.phone}
                       onChange={(e) => { setFormData({...formData, phone: e.target.value}); if(errors.phone) setErrors({...errors, phone: ''}) }}
-                      className={`w-full text-right bg-gray-50 border ${errors.phone ? 'border-red-500' : 'border-gray-200'} rounded-2xl px-5 py-3.5 focus:outline-none focus:border-[#DA291C] focus:bg-white transition-colors`}
+                      className={`w-full text-center bg-gray-50 border ${errors.phone ? 'border-red-500' : 'border-gray-200'} rounded-2xl px-6 py-4 focus:outline-none focus:border-[#DA291C] focus:bg-white transition-colors`}
                     />
-                    {errors.phone && <span className="text-red-500 text-xs mt-1.5 font-bold block">{errors.phone}</span>}
+                    {errors.phone && <span className="text-red-500 text-xs mt-1.5 font-bold block text-center">{errors.phone}</span>}
                   </div>
 
                   {/* Type */}
                   <div>
-                    <label className="block font-bold text-gray-700 text-sm mb-2">نوع الرسالة</label>
+                    <label className="block font-bold text-gray-700 text-sm mb-3 text-center">نوع الرسالة</label>
                     <div className="relative">
                       <select
                         value={formData.type}
                         onChange={(e) => setFormData({...formData, type: e.target.value})}
-                        className="w-full bg-gray-50 border border-gray-200 rounded-2xl px-5 py-3.5 appearance-none focus:outline-none focus:border-[#DA291C] focus:bg-white transition-colors cursor-pointer"
+                        className="w-full text-center bg-gray-50 border border-gray-200 rounded-2xl px-6 py-4 appearance-none focus:outline-none focus:border-[#DA291C] focus:bg-white transition-colors cursor-pointer"
                       >
                         {FORM_OPTIONS.map(opt => <option key={opt} value={opt}>{opt}</option>)}
                       </select>
-                      <span className="absolute left-5 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400">▼</span>
+                      <span className="absolute left-6 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400">▼</span>
                     </div>
                   </div>
 
                   {/* Message */}
                   <div>
-                    <label className="block font-bold text-gray-700 text-sm mb-2">تفاصيل الرسالة</label>
+                    <label className="block font-bold text-gray-700 text-sm mb-3 text-center">تفاصيل الرسالة</label>
                     <textarea
                       rows="4"
                       placeholder="اكتب كل التفاصيل اللي عايز تبلغنا بيها..."
                       value={formData.message}
                       onChange={(e) => { setFormData({...formData, message: e.target.value}); if(errors.message) setErrors({...errors, message: ''}) }}
-                      className={`w-full bg-gray-50 border ${errors.message ? 'border-red-500' : 'border-gray-200'} rounded-2xl px-5 py-3.5 focus:outline-none focus:border-[#DA291C] focus:bg-white transition-colors resize-none`}
+                      className={`w-full text-center bg-gray-50 border ${errors.message ? 'border-red-500' : 'border-gray-200'} rounded-2xl px-6 py-4 focus:outline-none focus:border-[#DA291C] focus:bg-white transition-colors resize-none`}
                     ></textarea>
-                    {errors.message && <span className="text-red-500 text-xs mt-1.5 font-bold block">{errors.message}</span>}
+                    {errors.message && <span className="text-red-500 text-xs mt-1.5 font-bold block text-center">{errors.message}</span>}
                   </div>
 
                   {/* Submit Button */}
